@@ -7,10 +7,8 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld';
 import TodoList from './components/TodoList';
 import CreateTodo from './components/CreateTodo';
-
 
 export default {
   name: 'App',
@@ -20,7 +18,6 @@ export default {
   },
   methods: {
     addTodo(todo) {
-      console.log(todo, 'todo ');
       const title = todo.title;
       const project = todo.project;
       this.todos.push({
